@@ -1,0 +1,155 @@
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.car-detail {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d90429;
+}
+
+.car-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.car-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.car-info {
+    flex: 2;
+    margin-left: 2rem;
+    min-width: 300px;
+}
+
+.car-info h1 {
+    font-size: 2rem;
+    color: #020102;
+}
+
+.car-info .price {
+    font-size: 1.5rem;
+    color: #d90429;
+    margin: 1rem 0;
+}
+
+.car-info .description {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.car-info .specs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.car-info .specs li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #020102;
+}
+
+.car-info .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #d90429;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.car-info .btn:hover {
+    background-color: #d90429;
+}
+/* Buttons container */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Button styles */
+.car-info .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #d90429;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.car-info .btn:hover {
+    background-color: #d90429;
+}
+
+/*.car-info .btn.add-to-cart {
+    background-color: #4caf50;
+}
+
+.car-info .btn.add-to-cart:hover {
+    background-color: #45a049;
+}*/
+
+/* Responsive Styles */
+/*@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .car-info .btn {
+        width: 100%;
+        text-align: center;
+    }
+}*/
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .car-detail {
+        flex-direction: column;
+    }
+
+    .car-info {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .car-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .car-info .price {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .car-info h1 {
+        font-size: 1.6rem;
+    }
+
+    .car-info .price {
+        font-size: 1.3rem;
+    }
+
+    .car-info .description,
+    .car-info .specs li {
+        font-size: 1rem;
+    }
+
+    .car-info .btn {
+        padding: 0.5rem 1rem;
+    }
+}
